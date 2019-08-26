@@ -1,0 +1,489 @@
+>> 5+6 
+
+ans =  11 
+
+>> 3-2 
+
+ans =  1 
+
+>> 1/2 
+
+ans =  0.50000 
+
+>> 5*8 
+
+ans =  40 
+
+>> 6 >1 ==2 % flase 
+
+ans = 0 
+
+>> 7>1==2 %false 
+
+ans = 0 
+
+>> 1 || 0 
+
+ans =  1 
+
+>> xor(1,0) 
+
+ans =  1 
+
+>> a=3 
+
+a =  3 
+
+>> a=3; 
+
+>> % semicolon supressing output 
+
+>> a=3 
+
+a =  3 
+
+>> a=pi 
+
+a =  3.1416 
+
+>> a 
+
+a =  3.1416 
+
+>> disp(a) 
+
+3.1416 
+
+>> disp(sprintf('2 decimals: %0.2f',a)) 
+
+2 decimals: 3.14 
+
+>> a=[1 2; 3 4; 5 6] 
+
+a = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> a=[1 2; 
+
+3 4; 
+
+5 6] 
+
+a = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> v=[1 2 3] % this is a 1X3 vector 
+
+v = 
+
+  
+
+   1   2   3 
+
+  
+
+>> v=[1;2;3] 
+
+v = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> v=1:0.1:2 % 
+
+v = 
+
+  
+
+    1.0000    1.1000    1.2000    1.3000    1.4000    1.5000    1.6000    1.7000    1.8000    1.9000    2.0000 
+
+  
+
+>> ones(2,3) 
+
+ans = 
+
+  
+
+   1   1   1 
+
+   1   1   1 
+
+  
+
+>> 2*ones(2,3) 
+
+ans = 
+
+  
+
+   2   2   2 
+
+   2   2   2 
+
+  
+
+>> ones(1,3) 
+
+ans = 
+
+  
+
+   1   1   1 
+
+  
+
+>> w=zeros(1,3) 
+
+w = 
+
+  
+
+   0   0   0 
+
+  
+
+>> w=rand(1,3) 
+
+w = 
+
+  
+
+   0.062217   0.433865   0.388277 
+
+  
+
+>> w=rand(3,3) 
+
+w = 
+
+  
+
+   0.522859   0.489901   0.064766 
+
+   0.076873   0.813267   0.178363 
+
+   0.684172   0.853912   0.941498 
+
+  
+
+>> w=randn(1,3) 
+
+w = 
+
+  
+
+   0.81025   0.69910   1.39157 
+
+  
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> w=-6+sqrt(10)*(randn(1,10000)); 
+
+>> w 
+
+w = 
+
+  
+
+Columns 1 through 9: 
+
+  
+
+  -1.0945e+00  -1.1543e+01  -4.0893e+00  -4.9976e+00  -4.0589e+00  -9.9537e+00  -5.8724e+00  -6.7315e+00  -7.1659e+00 
+
+  
+
+Columns 10 through 18: 
+
+  
+
+  -7.3925e+00  -1.9576e+00  -4.5377e+00  -8.5380e+00  -4.6577e+00  -8.1238e+00  -3.4833e+00  -3.9811e+00  -6.2587e+00 
+
+  
+
+Columns 19 through 27: 
+
+  
+
+  -8.8271e+00  -1.3277e+01  -4.7381e+00  -8.4369e+00  -7.6825e+00  -7.7551e+00  -9.8757e+00  -8.9110e+00  -3.5270e+00 
+
+  
+
+Columns 28 through 36: 
+
+  
+
+  -1.0365e+01  -2.7990e+00  -4.4410e+00  -8.6942e+00  -4.4773e+00  -7.0039e+00  -9.5247e+00  -7.7674e+00  -1.1116e+01 
+
+  
+
+Columns 37 through 45: 
+
+  
+
+  -6.2564e+00  -1.2876e+01  -9.5068e+00  -6.3620e+00  -7.1663e+00  -4.2626e+00  -6.3435e+00  -3.7281e+00  -8.3057e-01 
+
+  
+
+Columns 46 through 54: 
+
+  
+
+  -7.8645e+00  -4.3544e+00  -7.3363e+00  -8.2006e+00  -1.0713e+01  -8.2936e+00  -8.1631e+00  -3.6402e+00  -9.3219e+00 
+
+  
+
+Columns 55 through 63: 
+
+  
+
+  -2.2959e+00  -6.5185e+00  -2.2499e+00  -5.6177e+00  -3.2847e+00  -1.0070e+01  -5.7368e+00  -5.1281e+00  -1.5405e+00 
+
+  
+
+Columns 64 through 72: 
+
+  
+
+  -3.1111e+00  -3.2401e+00  -4.2519e+00  -1.0176e+01  -7.6275e+00  -1.1801e+01  -4.7834e+00  -6.0518e+00  -5.9974e+00 
+
+  
+
+Columns 73 through 81: 
+
+  
+
+  -6.6103e+00  -1.3441e+00  -5.4927e+00  -5.9617e+00  -4.4343e+00  -4.7297e+00  -3.1943e+00  -8.0002e+00  -4.8787e+00 
+
+  
+
+Columns 82 through 90: 
+
+  
+
+  -7.1569e+00  -6.3435e+00  -3.3485e+00  -4.7005e+00  -2.3447e+00  -3.9018e+00  -6.0709e+00  -5.6585e+00  -1.2536e+00 
+
+  
+
+Columns 91 through 99: 
+
+  
+
+  -3.8249e+00  -5.2476e+00  -8.4087e-01  -3.7546e+00  -5.4679e+00  -5.2268e+00  -9.5341e+00  -4.0900e+00  -1.0767e+01 
+
+  
+
+Columns 100 through 108: 
+
+  
+
+   2.7189e-01  -1.1025e+01  -3.6612e+00  -7.2096e+00  -4.1899e+00  -6.5853e+00  -6.7346e+00  -4.8007e+00   6.3722e-01 
+
+  
+
+Columns 109 through 117: 
+
+  
+
+  -4.5758e+00  -1.1301e+01  -9.0468e+00  -7.4628e-01  -1.0523e+01  -9.2225e+00  -4.3767e+00  -6.7557e+00  -7.5093e+00 
+
+  
+
+warning: broken pipe 
+
+>> 
+
+>> hist(w) 
+
+>> hist(w, 50) 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> eye(4) 
+
+ans = 
+
+  
+
+Diagonal Matrix 
+
+  
+
+   1   0   0   0 
+
+   0   1   0   0 
+
+   0   0   1   0 
+
+   0   0   0   1 
+
+  
+
+>> I=eye(6) 
+
+I = 
+
+  
+
+Diagonal Matrix 
+
+  
+
+   1   0   0   0   0   0 
+
+   0   1   0   0   0   0 
+
+   0   0   1   0   0   0 
+
+   0   0   0   1   0   0 
+
+   0   0   0   0   1   0 
+
+   0   0   0   0   0   1 
+
+  
+
+>> 
+
+>> 
+
+>> help eye() 
+
+error: help: 'eye()' not found 
+
+>> help eye 
+
+'eye' is a built-in function from the file libinterp/corefcn/data.cc 
+
+  
+
+-- Built-in Function: eye (N) 
+
+-- Built-in Function: eye (M, N) 
+
+-- Built-in Function: eye ([M N]) 
+
+-- Built-in Function: eye (..., CLASS) 
+
+     Return an identity matrix.  If invoked with a single scalar 
+
+     argument N, return a square NxN identity matrix.  If supplied two 
+
+     scalar arguments (M, N), 'eye' takes them to be the number of rows 
+
+     and columns.  If given a vector with two elements, 'eye' uses the 
+
+     values of the elements as the number of rows and columns, 
+
+     respectively.  For example: 
+
+  
+
+          eye (3) 
+
+           =>  1  0  0 
+
+               0  1  0 
+
+               0  0  1 
+
+  
+
+     The following expressions all produce the same result: 
+
+  
+
+          eye (2) 
+
+          == 
+
+          eye (2, 2) 
+
+          == 
+
+          eye (size ([1, 2; 3, 4]) 
+
+  
+
+     The optional argument CLASS, allows 'eye' to return an array of the 
+
+     specified type, like 
+
+  
+
+          val = zeros (n,m, "uint8") 
+
+  
+
+     Calling 'eye' with no arguments is equivalent to calling it with an 
+
+     argument of 1.  Any negative dimensions are treated as zero.  These 
+
+     odd definitions are for compatibility with MATLAB. 
+
+  
+
+     See also: speye, ones, zeros. 
+
+  
+
+  
+
+Additional help for built-in functions and operators is 
+
+available in the online version of the manual.  Use the command 
+
+'doc <topic>' to search the manual index. 
+
+  
+
+Help and information about Octave is also available on the WWW 
+
+at http://www.octave.org and via the help@octave.org 
+
+mailing list. 
+
+>> 
+
+>> 
