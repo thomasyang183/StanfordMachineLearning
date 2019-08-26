@@ -1,0 +1,435 @@
+>> a=[1 2; 3 4; 5 6] 
+
+a = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> SZ=size(a) 
+
+SZ = 
+
+  
+
+   3   2 
+
+  
+
+>> size(a,1) %Matrix should have A, not a 
+
+ans =  3 
+
+>> size(a,2) 
+
+ans =  2 
+
+>> v=[1:4] 
+
+v = 
+
+  
+
+   1   2   3   4 
+
+  
+
+>> length(v) 
+
+ans =  4 
+
+>> length([1;2;3;4;5]) 
+
+ans =  5 
+
+>> 
+
+>> 
+
+>> pwd 
+
+ans = /Users/YOUNG 
+
+>> 
+
+>> ls 
+
+Applications                                            Music 
+
+Creative Cloud Files                                    On 
+
+DS_Hands                                                Pictures 
+
+DS_Hands On ML With Scikit-Learn and TensorsFlow_022519 Public 
+
+Desktop                                                 Scikit-Learn 
+
+Documents                                               Sites 
+
+Downloads                                               TensorsFlow_022519 
+
+Dropbox                                                 VirtualBox VMs 
+
+ENTER                                                   With 
+
+Everything_before_022519                                anaconda3 
+
+Google Drive                                            and 
+
+Library                                                 bash_profile 
+
+ML                                                      octave-workspace 
+
+Movies                                                  百度云同步盘 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> % Andrew has a .dat file on the desktop 
+
+>> load featuresX.dat 
+
+error: load: unable to find file featuresX.dat 
+
+>> load priceY.dat 
+
+error: load: unable to find file priceY.dat 
+
+>> 
+
+>> %in Octave, string is represented by single quote 
+
+>> 
+
+>> load('featuresX.dat') 
+
+error: load: unable to find file featuresX.dat 
+
+>> 
+
+>> who 
+
+Variables in the current scope: 
+
+  
+
+I    SZ   a    ans  v    w 
+
+  
+
+>> %all the variables in the current scope 
+
+>> 
+
+>> clear featuresX 
+
+>> %the above command clear the featuresX variable from the scope 
+
+>> a(1:3) 
+
+ans = 
+
+  
+
+   1   3   5 
+
+  
+
+>> %show the first 3 elements in a 
+
+>> save hello.mat v; 
+
+>> %create a file named hello.mat 
+
+>> clear 
+
+>> % without specifying any variable, then all of them would be cleared 
+
+>> 
+
+>> 
+
+>> save hello.txt v -ascii  %save as text (ASCII) 
+
+>> pwd 
+
+ans = /Users/YOUNG 
+
+>> 
+
+>> save it to the default directory mentioned above 
+
+warning: save: no such variable 'to' 
+
+warning: save: no such variable 'the' 
+
+warning: save: no such variable 'default' 
+
+warning: save: no such variable 'directory' 
+
+warning: save: no such variable 'mentioned' 
+
+warning: save: no such variable 'above' 
+
+>> A = [1 2; 3 4; 5 6] 
+
+A = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> A(3,2) 
+
+ans =  6 
+
+>> 
+
+>> A(2,:) 
+
+ans = 
+
+  
+
+   3   4 
+
+  
+
+>> % ":" means every element along that row/column 
+
+>> A(:,2) 
+
+ans = 
+
+  
+
+   2 
+
+   4 
+
+   6 
+
+  
+
+>> A([1 3],:) 
+
+ans = 
+
+  
+
+   1   2 
+
+   5   6 
+
+  
+
+>> % find the 1st and 3rd row of the matrix 
+
+>> 
+
+>> A(:,2) = [10;11;12] 
+
+A = 
+
+  
+
+    1   10 
+
+    3   11 
+
+    5   12 
+
+  
+
+>> A=[A,[100; 101; 102]) 
+
+parse error: 
+
+  
+
+  syntax error 
+
+  
+
+>>> A=[A,[100; 101; 102]) 
+
+                     ^ 
+
+  
+
+>> A=[A,[100;101;102]] 
+
+A = 
+
+  
+
+     1    10   100 
+
+     3    11   101 
+
+     5    12   102 
+
+  
+
+>> size(A) 
+
+ans = 
+
+  
+
+   3   3 
+
+  
+
+>> A(:) 
+
+ans = 
+
+  
+
+     1 
+
+     3 
+
+     5 
+
+    10 
+
+    11 
+
+    12 
+
+   100 
+
+   101 
+
+   102 
+
+  
+
+>> % put all the elements of A into a single vector 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> A= [1 2; 3 4; 5 6] 
+
+A = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> B=[10 11; 12 13; 14 15] 
+
+B = 
+
+  
+
+   10   11 
+
+   12   13 
+
+   14   15 
+
+  
+
+>> C= [A B] 
+
+C = 
+
+  
+
+    1    2   10   11 
+
+    3    4   12   13 
+
+    5    6   14   15 
+
+  
+
+>> #merging them 
+
+>> C=[A;B] 
+
+C = 
+
+  
+
+    1    2 
+
+    3    4 
+
+    5    6 
+
+   10   11 
+
+   12   13 
+
+   14   15 
+
+  
+
+>> size(C) 
+
+ans = 
+
+  
+
+   6   2 
+
+  
+
+>> C=[A,B] 
+
+C = 
+
+  
+
+    1    2   10   11 
+
+    3    4   12   13 
+
+    5    6   14   15 
+
+  
+
+>> 
