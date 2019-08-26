@@ -1,0 +1,949 @@
+>> A=[1 2;3 4;5 6] 
+
+A = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> B=[11 12; 13 14; 151 16] 
+
+B = 
+
+  
+
+    11    12 
+
+    13    14 
+
+   151    16 
+
+  
+
+>> B=[11 12; 13 14; 15 16] 
+
+B = 
+
+  
+
+   11   12 
+
+   13   14 
+
+   15   16 
+
+  
+
+>> C = [1 1; 2 2] 
+
+C = 
+
+  
+
+   1   1 
+
+   2   2 
+
+  
+
+>> A*C 
+
+ans = 
+
+  
+
+    5    5 
+
+   11   11 
+
+   17   17 
+
+  
+
+>> A.*B %. sign indicate element wise operation 
+
+ans = 
+
+  
+
+   11   24 
+
+   39   56 
+
+   75   96 
+
+  
+
+>> A.^2 
+
+ans = 
+
+  
+
+    1    4 
+
+    9   16 
+
+   25   36 
+
+  
+
+>> v=[1;2;3] 
+
+v = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> 1./v 
+
+ans = 
+
+  
+
+   1.00000 
+
+   0.50000 
+
+   0.33333 
+
+  
+
+>> 1./A 
+
+ans = 
+
+  
+
+   1.00000   0.50000 
+
+   0.33333   0.25000 
+
+   0.20000   0.16667 
+
+  
+
+>> log(v) 
+
+ans = 
+
+  
+
+   0.00000 
+
+   0.69315 
+
+   1.09861 
+
+  
+
+>> exp(v) 
+
+ans = 
+
+  
+
+    2.7183 
+
+    7.3891 
+
+   20.0855 
+
+  
+
+>> abs(v) 
+
+ans = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> abs([-1;2;-3]) 
+
+ans = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> -v 
+
+ans = 
+
+  
+
+  -1 
+
+  -2 
+
+  -3 
+
+  
+
+>> abs([-v]) 
+
+ans = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> v+1 
+
+ans = 
+
+  
+
+   2 
+
+   3 
+
+   4 
+
+  
+
+>> v+ones(length(v),1) 
+
+ans = 
+
+  
+
+   2 
+
+   3 
+
+   4 
+
+  
+
+>> A 
+
+A = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> A' 
+
+ans = 
+
+  
+
+   1   3   5 
+
+   2   4   6 
+
+  
+
+>> B' % transpose 
+
+ans = 
+
+  
+
+   11   13   15 
+
+   12   14   16 
+
+  
+
+>> (A')' 
+
+ans = 
+
+  
+
+   1   2 
+
+   3   4 
+
+   5   6 
+
+  
+
+>> a= [1 15 2 0.5] 
+
+a = 
+
+  
+
+    1.00000   15.00000    2.00000    0.50000 
+
+  
+
+>> val=max(a) 
+
+val =  15 
+
+>> [val, ind]=max(a) 
+
+val =  15 
+
+ind =  2 
+
+>> max(A) 
+
+ans = 
+
+  
+
+   5   6 
+
+  
+
+>> a<3 
+
+ans = 
+
+  
+
+  1  0  1  1 
+
+  
+
+>> find(a<3) 
+
+ans = 
+
+  
+
+   1   3   4 
+
+  
+
+>> A=magic(3) 
+
+A = 
+
+  
+
+   8   1   6 
+
+   3   5   7 
+
+   4   9   2 
+
+  
+
+>> help magic 
+
+'magic' is a function from the file C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\special-matrix\magic.m 
+
+  
+
+-- magic (N) 
+
+  
+
+     Create an N-by-N magic square. 
+
+  
+
+     A magic square is an arrangement of the integers '1:n^2' such that 
+
+     the row sums, column sums, and diagonal sums are all equal to the 
+
+     same value. 
+
+  
+
+     Note: N must be a scalar greater than or equal to 3.  If you supply 
+
+     N less than 3, magic returns either a nonmagic square, or else the 
+
+     degenerate magic squares 1 and []. 
+
+  
+
+Additional help for built-in functions and operators is 
+
+available in the online version of the manual.  Use the command 
+
+'doc <topic>' to search the manual index. 
+
+  
+
+Help and information about Octave is also available on the WWW 
+
+at https://www.octave.org and via the help@octave.org 
+
+mailing list. 
+
+>> A= magic(3) 
+
+A = 
+
+  
+
+   8   1   6 
+
+   3   5   7 
+
+   4   9   2 
+
+  
+
+>> [r,c]=find(A>7) 
+
+r = 
+
+  
+
+   1 
+
+   3 
+
+  
+
+c = 
+
+  
+
+   1 
+
+   2 
+
+  
+
+>> [r,c]=find(A>=7) 
+
+r = 
+
+  
+
+   1 
+
+   3 
+
+   2 
+
+  
+
+c = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> help find 
+
+'find' is a built-in function from the file libinterp/corefcn/find.cc 
+
+  
+
+-- IDX = find (X) 
+
+-- IDX = find (X, N) 
+
+-- IDX = find (X, N, DIRECTION) 
+
+-- [i, j] = find (...) 
+
+-- [i, j, v] = find (...) 
+
+     Return a vector of indices of nonzero elements of a matrix, as a 
+
+     row if X is a row vector or as a column otherwise. 
+
+  
+
+     To obtain a single index for each matrix element, Octave pretends 
+
+     that the columns of a matrix form one long vector (like Fortran 
+
+     arrays are stored).  For example: 
+
+  
+
+          find (eye (2)) 
+
+            => [ 1; 4 ] 
+
+  
+
+     If two inputs are given, N indicates the maximum number of elements 
+
+     to find from the beginning of the matrix or vector. 
+
+  
+
+     If three inputs are given, DIRECTION should be one of "first" or 
+
+     "last", requesting only the first or last N indices, respectively. 
+
+     However, the indices are always returned in ascending order. 
+
+  
+
+     If two outputs are requested, 'find' returns the row and column 
+
+     indices of nonzero elements of a matrix.  For example: 
+
+  
+
+          [i, j] = find (2 * eye (2)) 
+
+              => i = [ 1; 2 ] 
+
+              => j = [ 1; 2 ] 
+
+  
+
+     If three outputs are requested, 'find' also returns a vector 
+
+     containing the nonzero values.  For example: 
+
+  
+
+          [i, j, v] = find (3 * eye (2)) 
+
+                 => i = [ 1; 2 ] 
+
+                 => j = [ 1; 2 ] 
+
+                 => v = [ 3; 3 ] 
+
+  
+
+     Note that this function is particularly useful for sparse matrices, 
+
+     as it extracts the nonzero elements as vectors, which can then be 
+
+     used to create the original matrix.  For example: 
+
+  
+
+          sz = size (a); 
+
+          [i, j, v] = find (a); 
+
+          b = sparse (i, j, v, sz(1), sz(2)); 
+
+  
+
+     See also: nonzeros. 
+
+  
+
+Additional help for built-in functions and operators is 
+
+available in the online version of the manual.  Use the command 
+
+'doc <topic>' to search the manual index. 
+
+  
+
+Help and information about Octave is also available on the WWW 
+
+at https://www.octave.org and via the help@octave.org 
+
+mailing list. 
+
+>> sum(a) 
+
+ans =  18.500 
+
+>> prod(a) 
+
+ans =  15 
+
+>> a 
+
+a = 
+
+  
+
+    1.00000   15.00000    2.00000    0.50000 
+
+  
+
+>> floor(a) 
+
+ans = 
+
+  
+
+    1   15    2    0 
+
+  
+
+>> %round down 
+
+>> ceil(a) % round up 
+
+ans = 
+
+  
+
+    1   15    2    1 
+
+  
+
+>> rand(3) 
+
+ans = 
+
+  
+
+   0.739040   0.734880   0.471029 
+
+   0.996818   0.094087   0.758774 
+
+   0.492802   0.404051   0.418972 
+
+  
+
+>> max(rand(3),rand(3)) 
+
+ans = 
+
+  
+
+   0.22017   0.93756   0.91828 
+
+   0.99892   0.96085   0.69256 
+
+   0.57432   0.99355   0.75822 
+
+  
+
+>> 
+
+>> 
+
+>> A 
+
+A = 
+
+  
+
+   8   1   6 
+
+   3   5   7 
+
+   4   9   2 
+
+  
+
+>> max(a,[],1) 
+
+ans = 
+
+  
+
+    1.00000   15.00000    2.00000    0.50000 
+
+  
+
+>> %what this does, is take the max of column y 
+
+>> max(A,[],1) 
+
+ans = 
+
+  
+
+   8   9   7 
+
+  
+
+>> max(A,[]) 
+
+error: max: nonconformant arguments (op1 is 3x3, op2 is 0x0) 
+
+>> max(A,[],2) 
+
+ans = 
+
+  
+
+   8 
+
+   7 
+
+   9 
+
+  
+
+>> A(:) 
+
+ans = 
+
+  
+
+   8 
+
+   3 
+
+   4 
+
+   1 
+
+   5 
+
+   9 
+
+   6 
+
+   7 
+
+   2 
+
+  
+
+>> max(a(:)) 
+
+ans =  15 
+
+>> max(A(:)) 
+
+ans =  9 
+
+>> A=magic(9) 
+
+A = 
+
+  
+
+   47   58   69   80    1   12   23   34   45 
+
+   57   68   79    9   11   22   33   44   46 
+
+   67   78    8   10   21   32   43   54   56 
+
+   77    7   18   20   31   42   53   55   66 
+
+    6   17   19   30   41   52   63   65   76 
+
+   16   27   29   40   51   62   64   75    5 
+
+   26   28   39   50   61   72   74    4   15 
+
+   36   38   49   60   71   73    3   14   25 
+
+   37   48   59   70   81    2   13   24   35 
+
+  
+
+>> sum(A,1) 
+
+ans = 
+
+  
+
+   369   369   369   369   369   369   369   369   369 
+
+  
+
+>> %sum up column 
+
+>> sum(A,2) %usm up row 
+
+ans = 
+
+  
+
+   369 
+
+   369 
+
+   369 
+
+   369 
+
+   369 
+
+   369 
+
+   369 
+
+   369 
+
+   369 
+
+  
+
+>> A.*eye(9) 
+
+ans = 
+
+  
+
+   47    0    0    0    0    0    0    0    0 
+
+    0   68    0    0    0    0    0    0    0 
+
+    0    0    8    0    0    0    0    0    0 
+
+    0    0    0   20    0    0    0    0    0 
+
+    0    0    0    0   41    0    0    0    0 
+
+    0    0    0    0    0   62    0    0    0 
+
+    0    0    0    0    0    0   74    0    0 
+
+    0    0    0    0    0    0    0   14    0 
+
+    0    0    0    0    0    0    0    0   35 
+
+  
+
+>> sum(sum(A.eye(9))) 
+
+error: matrix cannot be indexed with . 
+
+>> sum(sum(A.*eye(9))) 
+
+ans =  369 
+
+>> eye(9) 
+
+ans = 
+
+  
+
+Diagonal Matrix 
+
+  
+
+   1   0   0   0   0   0   0   0   0 
+
+   0   1   0   0   0   0   0   0   0 
+
+   0   0   1   0   0   0   0   0   0 
+
+   0   0   0   1   0   0   0   0   0 
+
+   0   0   0   0   1   0   0   0   0 
+
+   0   0   0   0   0   1   0   0   0 
+
+   0   0   0   0   0   0   1   0   0 
+
+   0   0   0   0   0   0   0   1   0 
+
+   0   0   0   0   0   0   0   0   1 
+
+  
+
+>> 
+
+>> flipud(eye(9)) 
+
+ans = 
+
+  
+
+Permutation Matrix 
+
+  
+
+   0   0   0   0   0   0   0   0   1 
+
+   0   0   0   0   0   0   0   1   0 
+
+   0   0   0   0   0   0   1   0   0 
+
+   0   0   0   0   0   1   0   0   0 
+
+   0   0   0   0   1   0   0   0   0 
+
+   0   0   0   1   0   0   0   0   0 
+
+   0   0   1   0   0   0   0   0   0 
+
+   0   1   0   0   0   0   0   0   0 
+
+   1   0   0   0   0   0   0   0   0 
+
+  
+
+>> A=magic(3) 
+
+A = 
+
+  
+
+   8   1   6 
+
+   3   5   7 
+
+   4   9   2 
+
+  
+
+>> pinv(A)%inverse of A 
+
+ans = 
+
+  
+
+   0.147222  -0.144444   0.063889 
+
+  -0.061111   0.022222   0.105556 
+
+  -0.019444   0.188889  -0.102778 
+
+  
+
+>> pinv(A) * A 
+
+ans = 
+
+  
+
+   1.0000e+00   2.0817e-16  -3.1641e-15 
+
+  -6.1062e-15   1.0000e+00   6.2450e-15 
+
+   3.0531e-15   4.1633e-17   1.0000e+00 
+
+  
+
+>> 
