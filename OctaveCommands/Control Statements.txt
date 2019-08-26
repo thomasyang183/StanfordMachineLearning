@@ -1,0 +1,369 @@
+>> v=zeros(10,1) 
+
+v = 
+
+  
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+   0 
+
+  
+
+>> for i=1:10, 
+
+v(i)=2^i; 
+
+end; 
+
+>> v 
+
+v = 
+
+  
+
+      2 
+
+      4 
+
+      8 
+
+     16 
+
+     32 
+
+     64 
+
+    128 
+
+    256 
+
+    512 
+
+   1024 
+
+  
+
+>> indices=1:10 
+
+indices = 
+
+  
+
+    1    2    3    4    5    6    7    8    9   10 
+
+  
+
+>> for i=indices, 
+
+disp(i); 
+
+end; 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+7 
+
+8 
+
+9 
+
+10 
+
+>> 
+
+>> v 
+
+v = 
+
+  
+
+      2 
+
+      4 
+
+      8 
+
+     16 
+
+     32 
+
+     64 
+
+    128 
+
+    256 
+
+    512 
+
+   1024 
+
+  
+
+>> i=1; 
+
+>> while i<= 5, 
+
+v(i)=100; 
+
+i=i+1; 
+
+end; 
+
+>> v 
+
+v = 
+
+  
+
+    100 
+
+    100 
+
+    100 
+
+    100 
+
+    100 
+
+     64 
+
+    128 
+
+    256 
+
+    512 
+
+   1024 
+
+  
+
+>> 
+
+>> i=1; 
+
+>> while true, 
+
+v(i)=999; 
+
+i=i+1; 
+
+if i==6, 
+
+break; 
+
+end; 
+
+end; 
+
+>> v 
+
+v = 
+
+  
+
+    999 
+
+    999 
+
+    999 
+
+    999 
+
+    999 
+
+     64 
+
+    128 
+
+    256 
+
+    512 
+
+   1024 
+
+  
+
+>> v(1) 
+
+ans =  999 
+
+>> v(1)=2 
+
+v = 
+
+  
+
+      2 
+
+    999 
+
+    999 
+
+    999 
+
+    999 
+
+     64 
+
+    128 
+
+    256 
+
+    512 
+
+   1024 
+
+  
+
+>> if v(1)==1, 
+
+disp('The value is one'); 
+
+elseif v(1)==2, 
+
+disp('Te value is two'); 
+
+else 
+
+disp('The value is not one or two.'); 
+
+end; 
+
+Te value is two 
+
+>> 
+
+>> 
+
+>> 
+
+>> %define this function in Octave in Microsoft Wordpad 
+
+>> 
+
+>> squareThisNumber(5) 
+
+error: 'squareThisNumber' undefined near line 1 column 1 
+
+>> 
+
+>> pw 
+
+error: 'pw' undefined near line 1 column 1 
+
+>> pwd 
+
+ans = C:\Users\thyang 
+
+>> cd 'C:\Users\thyang\Downloads\MachineLearning_Stanford' 
+
+>> squareThisNumber(5) 
+
+error: 'squareThisNumber' undefined near line 1 column 1 
+
+>> cd 'C:\Users\thyang\Downloads\MachineLearning_Stanford\square this.rtf' 
+
+error: C:\Users\thyang\Downloads\MachineLearning_Stanford\square this.rtf: Invalid argument 
+
+>> cd 'C:\Users\thyang\Downloads\MachineLearning_Stanford' 
+
+>> squareThisNumber(5) 
+
+error: 'squareThisNumber' undefined near line 1 column 1 
+
+>> cd 'C:\Users\thyang\Downloads\MachineLearning_Stanford' 
+
+>> squareThisNumber(5) 
+
+error: 'squareThisNumber' undefined near line 1 column 1 
+
+>> 
+
+>> 
+
+>> % Octave Search Path (advanced/optional) 
+
+>> addpath('C:\Users\thyang\Downloads\MachineLearning_Stanford') 
+
+>> cd 'C:\' 
+
+>> pwd 
+
+ans = C:\ 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> 
+
+>> X=[1 1; 1 2; 1 3] 
+
+X = 
+
+  
+
+   1   1 
+
+   1   2 
+
+   1   3 
+
+  
+
+>> y=[1;2;3] 
+
+y = 
+
+  
+
+   1 
+
+   2 
+
+   3 
+
+  
+
+>> squareThisNumber(5) 
+
+error: 'squareThisNumber' undefined near line 1 column 1 
+
+>> cd 'C:\Users\thyang\Downloads\MachineLearning_Stanford' 
+
+>> squareThisNumber(5) 
+
+error: 'squareThisNumber' undefined near line 1 column 1 
+
+>> 
